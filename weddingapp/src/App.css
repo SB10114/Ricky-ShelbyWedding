@@ -7,9 +7,12 @@ p {
 .faqs {
   padding-left: 20px;
   padding-top: 50px;
+  font-size: x-large;
 }
 body {
   background-color: rgba(85, 128, 153, 0.621);
+  background: rgb(88,11,230);
+  background: radial-gradient(circle, rgba(88,11,230,0.526581579897584) 26%, rgba(140,70,252,1) 63%);
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }

@@ -1,10 +1,10 @@
 import "./App.css";
-import ImageGallery from 'react-image-gallery';
-import img1 from "./RS pics/img1.jpg"
-import img2 from "./RS pics/img2.jpg"
-import img3 from "./RS pics/img3.jpg"
-import img4 from "./RS pics/img4.jpg"
-import img5 from "./RS pics/img5.jpg"
+import ImageGallery from "react-image-gallery";
+import img1 from "./RS pics/img1.jpg";
+import img2 from "./RS pics/img2.jpg";
+import img3 from "./RS pics/img3.jpg";
+import img4 from "./RS pics/img4.jpg";
+import img5 from "./RS pics/img5.jpg";
 
 const images = [
   {
@@ -34,27 +34,37 @@ const images = [
   },
 ];
 
-
 function App() {
   return (
     <div className="App">
       <div className="topnav">
-        <a className="active" href="#home">
-          Home
+        <a target="_blank" href="https://www.theestesparkresort.com/">
+          Guest Accommodations
         </a>
-        <a href="https://www.theestesparkresort.com/">Guest Accommodations</a>
-        <a href="https://www.honeyfund.com/?gclid=CjwKCAjw77WVBhBuEiwAJ-YoJJMLjknKsknII-DeJguMFUwekGrWJnkh4ZMMjQkM2z65ibrXIiI6aBoCW40QAvD_BwE">
+        <a
+          target="_blank"
+          href="https://www.honeyfund.com/site/MrandMrsMondragon2023?no_gdpr=1"
+        >
           Honey Fund
         </a>
-        <a href="#about">RSVP</a>
       </div>
-      <div>
-        <h1>Welcome to Ricky and Shelby's wedding website</h1>
-      </div>
+      <div //header
+          style={{
+            marginLeft: 120,
+            maxWidth: "30vw",
+          }}
+        >
+          <h1>Welcome to Ricky and Shelby's wedding website</h1>
+        </div>
 
-      <ImageGallery  items={images}/>
-    
-      <div className="faqs">
+      <div
+        style={{
+          //gallery placement
+          display: "flex",
+          justifyContent: "space-around",
+        }}
+      >
+         <div className="faqs">
         <h3>FAQ'S</h3>
         <details>
           <summary>Dress code</summary>
@@ -89,6 +99,19 @@ function App() {
           </p>
         </details>
       </div>
+    
+
+        <div //image gallery
+          style={{
+            width: "50vw",
+            border: 50,
+
+          }}
+        >
+          <ImageGallery items={images} />
+        </div>
+      </div>
+
     </div>
   );
 }
